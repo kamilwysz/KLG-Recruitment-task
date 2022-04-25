@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie-KLG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="wrapper">
+    <header class="wrapper__header">
+        <h2 class="header__text">Trigger and Constraint Schemes</h2>
+    </header>
+    <main class="wrapper__main js-content">
+        <button class="new-scheme-button">&#43; New</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Trigger Name</th>
+                    <th>Interim Trigger Name</th>
+                    <th>Effective Deadline Info</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="schemes__body" >
+            </tbody>
+        </table>
+        <div class="new-scheme-modal hidden">
+            <div class="new-scheme-modal__content">
+                <form class="new-scheme-form">
+                    <h2 class="header__text">Trigger and Constraint Schemes - New</h2>
+                    <div class="form__name form-field">
+                        <input class="form__name-input required" placeholder="Name *" type="text">
+                    </div>
+                    <div class="form__trigger-name form-field">
+                        <input class="combobox required" list="trigger-name" placeholder="Trigger Name *" type="text">
+                        <datalist id="trigger-name">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </datalist>
+                    </div>
+                    <div class="form__trigger-date form-field bordered">
+                        <h4 class="form-field-header">Trigger date Known</h4>
+                        <label><input name="trigger-date" type="radio"> Lawful</label>
+                        <label><input name="trigger-date" type="radio"> Service Category</label>
+                        <label><input name="trigger-date" type="radio"> Item</label>
+                    </div>
+                    <div class="form__interim-trigger form-field bordered">
+                        <label><input class="checkbox" name="interim-trigger" type="checkbox"> Is Interim Trigger?</label>
+                        <input class="combobox" list="interim-trigger" placeholder="Interim Trigger Name" type="text">
+                        <datalist id="interim-trigger">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </datalist>
+                    </div>
+                    <div class="form__constraint-name form-field">
+                        <input class="combobox required" list="constraint-name" placeholder="Constraint Name *" type="text">
+                        <datalist id="constraint-name">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </datalist>
+                    </div>
+                    <div class="form__trigger-date form-field bordered">
+                        <h4 class="form-field-header">Constraint Value Known</h4>
+                        <label><input name="trigger-date" type="radio"> Lawful</label>
+                        <label><input name="trigger-date" type="radio"> Service Category</label>
+                        <label><input name="trigger-date" type="radio"> Item</label>
+                    </div>
+                    <div class="form__effective-deadline form-field">
+                        <input class="combobox required" list="effective-deadline" placeholder="Effective Deadline Info *" type="text">
+                        <datalist id="effective-deadline">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </datalist>
+                    </div>
+                    <div class="form__related-processing form-field">
+                            <input class="combobox" list="related-processing" placeholder="Realted Processing Basis Reference Type" type="text">
+                            <datalist id="related-processing">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </datalist>
+                    </div>
+                    <div class="form__additional-options form-field bordered">
+                        <label><input name="additional-options" type="checkbox"> PURMA</label>
+                        <label><input name="additional-options" type="checkbox"> NNTM</label>
+                        <label><input name="additional-options" type="checkbox"> PDB</label>
+                        <label><input name="additional-options" type="checkbox"> DSART</label>
+                    </div>
+                    <div class="form__description form-field">
+                        <textarea class="textarea"cols="30" rows="2" placeholder="Description"></textarea>
+                    </div>
+                    <div class="form-field form__buttons">
+                        <button class="form-button close-button" ><img class="button-icon" src="./icons/close.svg"> Close</button>
+                        <button class="form-button save-button" disabled type="submit"><img class="button-icon" src="./icons/save.svg"> &nbsp;Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 500;
+}
+
+img {
+    width: 100%
+}
+
+header, main {
+    margin: 10px 40px;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    padding: 8px 20px;
+}
+
+th {
+    color: #969696;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: #ccc 0 0 5px 1px;
+    width: 100%;
+}
+
+thead {
+    font-size: 12px; 
+}
+
+tbody {
+    font-size: 14px;
+}
+
+body.modal-open {
+    height: 100vh;
+    overflow: hidden;
+}
+
+input, textarea {
+    font-weight: 500;
+}
+
+.button-icon {
+    width: 20px;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+.combobox {
+    border: none;
+    border-bottom: 1px solid #b5b5b5;
+    outline: none;
+    padding: 5px 0px;
+    width:100%;
+}
+
+.combobox:focus {
+    border-bottom: 1px solid #283593;
+}
+
+.form-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 1px gray;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-right: 5px;
+    padding: 5px 12px;
+    transition: 0.1s;
+}
+
+.form-button:active {
+    background-color: #bababa;
+}
+
+.form-button:hover {
+    background-color: #dadada;
+}
+
+.form__buttons {
+    display: flex;
+}
+
+.form-field > label {
+    margin-right: 10px;
+}
+
+.form-field-header {
+    color: #969696;
+    font-weight: 400;
+    padding: 0 0 10px 10px;
+}
+
+.form__name-input, textarea{
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    outline: none;
+    padding: 12px 8px;
+    width:100%;
+    resize: none;
+}
+
+.form__name-input:focus, textarea:focus {
+    border: 1px solid #283593;
+}
+
+.header__text {
+    padding: 8px 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.new-scheme-button {
+    background-color: #283593;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+.new-scheme-button:active {
+    opacity: 0.8;
+}
+
+.new-scheme-button:hover {
+    opacity: 0.9;
+}
+
+.new-scheme-form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.new-scheme-form .bordered {
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0.1px #acacac;
+    padding: 15px;
+}
+
+.new-scheme-form .header__text {
+    padding: 0 10px;
+}
+
+.new-scheme-modal {
+    align-items: center;
+    background-color: rgba(0,0,0,0.05);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.new-scheme-modal__content {
+    background-color: #fefefe;
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+    height: calc( 100vh - 25px);
+    padding: 15px;
+    width: calc( 100vw - 25px);
+}
+
+.options__icon {
+    width: 20px;
+}
+
+.options__icons {
+    column-gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8px;
+}
+
+.save-button:disabled {
+    pointer-events: none;
+    color: #969696;
+    background-color: #dadada
+}
+
+.warning {
+    border-color: #d81b60;
+}
+
+.warning::-webkit-input-placeholder {
+    color: #d81b60;
+ }
